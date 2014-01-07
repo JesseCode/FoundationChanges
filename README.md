@@ -11,5 +11,5 @@ Just some small changes to foundation 5
 <br> 
 *USAGE:*
 <p>Simpley replace your topbar.js with the one in the repo
-Then add the class "navigation-smooth" to your <nav> element </p>
+Then add the class "navigation-smooth" to your "<nav>" element </p>
 
