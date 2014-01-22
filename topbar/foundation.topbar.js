@@ -89,12 +89,12 @@
           
         if (topbar.hasClass('navigation-smooth')) {
           if(topbar.hasClass('expanded')) {
-              navigationSmooth.slideUp(400, function(){ topbar.toggleClass('expanded'); navigationSmooth.show();});
+              navigationSmooth.slideUp(400, function(){ topbar.toggleClass('expanded'); navigationSmooth.show(); $(this).clearQueue();});
           }
           else {
               navigationSmooth.hide();
               topbar.toggleClass('expanded');
-              navigationSmooth.slideDown(400);
+              navigationSmooth.slideDown(400, function(){$(this).clearQueue();});
           }
       }
 
